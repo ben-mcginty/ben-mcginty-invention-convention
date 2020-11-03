@@ -42,9 +42,9 @@ void loop() {
 
 // steer all sevos to targetAngle
 void steeringAngle(int targetAngle, int angle){
-  servo1A.write(90);
-  servo1B.write(90);
-  servo2A.write(90);
-  servo2B.write(90);
+  servo1A.write(targetAngle);
+  servo1B.write(targetAngle);
+  servo2A.write(targetAngle);
+  servo2B.write(targetAngle);
   delay(1000);
 }
